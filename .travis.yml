@@ -1,2 +1,7 @@
 rvm:
   - 2.3.1
+services:
+  - postgresql
+test:
+  adapter: postgresql
+  database: hyperspace_test
