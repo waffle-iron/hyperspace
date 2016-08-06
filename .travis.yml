@@ -3,6 +3,7 @@ rvm:
 services:
   - postgresql
 before_script:
+  - cp config/database.yml.example config/database.yml
   - psql -c 'create database hyperspace_test;' -U postgres
 test:
   adapter: postgresql
